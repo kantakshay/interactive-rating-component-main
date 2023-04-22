@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Overpass", sans-serif;
+  font-weight: bolder;
+}
+
+:root {
+  /* Primary */
+  --Orange: hsl(25, 97%, 53%);
+  /* Neutral */
+  --White: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Medium-Grey: hsl(216, 12%, 54%);
+  --Dark-Blue: hsl(212, 21%, 14%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+body {
+  background-color: var(--Very-Dark-Blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: var(--Dark-Blue);
+  border-radius: 20px;
+  height: 45vh;
+  margin-top: 40%;
+  padding: 30px;
+  width: 21vw;
+}
+
+ /* Rating state start  */
+.icon-container {
+  border-radius: 50%;
+  background-color: hsl(211, 21%, 23%);
+  width: 35px;
+  padding: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.star-icon {
+  margin: 10px;
+}
+.heading {
+  font-weight: 700;
+
+  color: var(--White);
+  font-size: 22px;
+}
+.paragraph {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--Light-Grey);
+  margin: 10px 0;
+  line-height: 20px;
+}
+
+.user-response {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rating_btn_list {
+  list-style: none;
+  color: aliceblue;
+  display: flex;
+}
+
+.rating_btn {
+  border-radius: 50%;
+  padding: 13px 17px;
+  margin: 12px 8px;
+  background-color: hsl(211, 21%, 23%);
+  color: var(--Medium-Grey);
+  border: 0px sold var(--Medium-Grey);
+}
+.rating_btn:hover {
+  background-color: var(--Orange);
+  color: var(--White);
+  cursor: pointer;
+}
+.rating_btn:focus {
+    background-color: hsl(216, 12%, 54%);
+    color: var(--White);
+}
+.submit_btn {
+    border: 0px sold var(--Medium-Grey);
+  background-color: var(--Orange);
+  color: var(--White);
+  text-transform: uppercase;
+  padding: 0.8vw 8vw;
+  border-radius: 25px;
+  margin-top: 10px;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+.submit_btn:hover {
+  background-color: var(--White);
+  color: var(--Orange);
+  cursor: pointer;
+}
+/*  Rating state end */
+
+/*  Thank you state start  */
+.container-thanks_state{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.select-display{
+    color: var(--Orange);
+    border-radius: 20px;
+    padding:3px 10px;
+    background-color: hsl(211, 21%, 23%);
+}
+
+
+
+/*  Thank you state end  */
+
+

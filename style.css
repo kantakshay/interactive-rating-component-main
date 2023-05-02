@@ -31,7 +31,7 @@ body {
   height: 45vh;
   margin-top: 40%;
   padding: 30px;
-  width: 21vw;
+  width: 21rem;
 }
 
  /* Rating state start  */
@@ -43,7 +43,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 .star-icon {
   margin: 10px;
@@ -77,8 +77,9 @@ body {
 
 .rating_btn {
   border-radius: 50%;
-  padding: 13px 17px;
-  margin: 12px 8px;
+  height: 50px;
+  width: 50px;
+  margin: 20px 8px;
   background-color: hsl(211, 21%, 23%);
   color: var(--Medium-Grey);
   border: 0px sold var(--Medium-Grey);
@@ -93,11 +94,12 @@ body {
     color: var(--White);
 }
 .submit_btn {
+  width: 100%;
     border: 0px sold var(--Medium-Grey);
   background-color: var(--Orange);
   color: var(--White);
   text-transform: uppercase;
-  padding: 0.8vw 8vw;
+  padding: 1vw 8vw;
   border-radius: 25px;
   margin-top: 10px;
   font-size: 12px;
@@ -125,9 +127,28 @@ body {
     padding:3px 10px;
     background-color: hsl(211, 21%, 23%);
 }
-
-
-
 /*  Thank you state end  */
+
+/* responsive */
+
+@media (max-width: 375px) {
+ .container{
+  width: 15rem;
+ }
+ .heading{
+   font-size: 15px;
+ }
+ .paragraph{
+  font-size: 11px;
+ }
+ .rating_btn{
+  height: 36px;
+  width: 36px;
+  margin: 15px 6px;
+ }
+ .submit_btn{
+  padding: 3vw 8vw;
+ }
+}
 
 
